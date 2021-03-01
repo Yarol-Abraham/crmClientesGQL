@@ -18,7 +18,7 @@ class dataBase {
             useUnifiedTopology: true,
             useCreateIndex: true,
             useFindAndModify: false
-        });
+        }).then(()=> console.log("BD connection success") )
 
         this.mongoose.connection.on("error", (error)=>{
             console.log("ha ocurrido un error: " + error);
