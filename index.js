@@ -18,7 +18,7 @@ const server = new ApolloServer({
                     usuario
                 }
             } catch (error) {
-                console.log("Ha ocurrido un error inesperado");
+                console.log("Ha ocurrido un error inesperado nuevamente");
                 console.log(error);
             }
         }
